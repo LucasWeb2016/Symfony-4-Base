@@ -1,0 +1,56 @@
+@import "~nprogress/nprogress.css";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~font-awesome/css/font-awesome";
+@import "~datatables.net-responsive-dt/css/responsive.dataTables.min.css";
+@import "~eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker-build.scss";
+@import "~chosen-js/chosen.css";
+
+.body {
+  padding: 0px;
+  margin: 0px;
+  width: 100% !important;
+}
+
+.img-logo-header {
+  width: 100%;
+}
+
+.main_container > .left_col {
+  position: fixed !important;
+}
+
+.flash-notice {
+  padding: 10px;
+  text-align: center;
+}
+
+.right_col {
+  padding: 30px 20px 0 !important;
+}
+
+.left-col {
+  display: flex;
+  align-items: center;
+  background: #F2F9E9;
+  opacity: 0.8;
+  height:100vh;
+}
+
+.left_col {
+  width: 100%;
+}
+
+.nav_menu {
+  height: 60px;
+  margin-bottom: 0px;
+}
+
+.page-title {
+  display: flex;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.welcome_profile {
+  color:white;
+}

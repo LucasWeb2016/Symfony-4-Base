@@ -1,0 +1,7 @@
+translations_extra:
+    default_format: 'xml'
+    default_locale: 'es'
+    other_locales: ['en']
+    domains: ['messages','validators']
+    main_folder: '%kernel.project_dir%/translations/'
+    yandex_api_key: 'trnsl.1.1.20180423T073603Z.df629049b0ec0681.98f05e3810321ab04e1f55cd3fb508e15b02afa9'

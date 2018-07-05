@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale|split('_')[0] }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="{{ asset('/imgs/favicon.png') }}">
+    <title>{% block title %}Template{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/css/custom.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/css/main.css') }}">
+    {% endblock %}
+</head>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <a href="{{ path('home') }}" title="home" class="hidden-xs">
+                    <img src="https://vignette.wikia.nocookie.net/mitologa/images/a/a3/Imagen_por_defecto.png/revision/latest?cb=20150824230838&path-prefix=es" height="150" class="img-logo-header" id="img-logo-big" />
+                </a>
+                <div class="welcome_profile">
+                    <h4>{{ 'label.welcome'|trans }}</h4>
+                    <h3>Enrique Mora</h3>
+                </div>
+                <div class="clearfix"></div>
+                <!-- sidebar menu -->
+                {% include 'includes/_menuuser.html.twig' %}
+                <!-- /menu footer buttons -->
+                {% include 'includes/_menufooterbuttons.html.twig' %}
+            </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <nav>
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        {% include 'includes/_userwidgettop.html.twig' %}
+                    </ul>
+                </nav>
+            </div>
+            <!-- titulo de la página -->
+            <div class="page-title">
+                <h3>{% block pageTitle %}{% endblock %}</h3>
+            </div>
+            <!-- /titulo de la página -->
+        </div>
+        <!-- /top navigation -->
+
+        <!-- contenido del body -->
+        <div class="right_col" role="main">
+            <div class="">
+                {% block body %}{% endblock %}
+            </div>
+        </div>
+        <!-- /page content -->
+
+    </div>
+</div>
+{% block javascripts %}
+    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+    <script src="{{ asset('bundles/bazingajstranslation/js/translator.min.js') }}"></script>
+    <script src="{{ url('bazinga_jstranslation_js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <script src="{{ asset('build/manifest.js') }}"></script>
+    <script src="{{ asset('build/js/common.js') }}"></script>
+    <script src="{{ asset('build/js/custom.js') }}"></script>
+    <script src="{{ asset('build/js/app.js') }}"></script>
+{% endblock %}
+</body>
+</html>
