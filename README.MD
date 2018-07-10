@@ -1,6 +1,6 @@
 
 # Objetivo
-Proyecto precofigurado para agilizar las primeras etapas de desarrollo de una aplicación.
+Proyecto preconfigurado para agilizar las primeras etapas de desarrollo de una aplicación.
 
 # Tabla de contenidos
 - [Objetivo](#objetivo)
