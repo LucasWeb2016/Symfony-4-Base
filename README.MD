@@ -15,6 +15,8 @@ Proyecto preconfigurado para agilizar las primeras etapas de desarrollo de una a
 	$ git clone https://github.com/emortri/symfony4template
 	$ cd symfony4template
 	$ composer install
+	$ yarn install
+	$ yarn run encore dev
 
 ## Cofiguración necesaria
 
@@ -23,7 +25,7 @@ Proyecto preconfigurado para agilizar las primeras etapas de desarrollo de una a
 	 23 DATABASE_URL=mysql://USUARIO:CONTRASEÑA@127.0.0.1:3306/NOMBRE_BD
 ```bash
 $ php bin/console doctrine:database:create
-$ php php bin/console doctrine:migrations:migrate
+$ php bin/console doctrine:migrations:migrate
 ```
 Por defecto se creará el siguiente usuario:
 
